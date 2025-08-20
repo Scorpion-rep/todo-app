@@ -1,0 +1,84 @@
+body{
+    background-image: url(blue_digital_abstract.jpg);
+    text-align: center;
+}
+
+a:hover{
+    color: chartreuse;    
+}
+
+i{
+    font-size: 50px; 
+    color:rgb(221, 22, 22);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 60px;
+    color: rgb(33, 105, 129);
+   
+}
+
+h3{
+    text-decoration: underline;
+    text-align: center;    
+}
+
+p {
+    font-size: 30px;
+    color: rgb(33, 105, 129);
+}
+
+.container{
+    
+    justify-content: space-around;
+}
+
+header, body {
+    background-color: lightcyan;
+}
+
+.my-page{    
+    justify-content: space-around;
+    background-size: cover;
+    border:10px solid rgb(8, 53, 95);
+    border-width: 5px;
+    border-radius: 40px;
+    margin: 40px;
+    padding: 5px;
+    width: auto;
+}
+
+.web-page, .quiz-page {
+    background-image: url(codes.jpg);
+    justify-content: space-around;
+    background-size: cover;
+    border:10px solid rgb(8, 53, 95);
+    border-width: 10px;
+    border-radius: 40px;
+    margin: 30px;
+    padding: 5px;
+    width: auto;
+}
+
+.footing {
+    color: blanchedalmond;
+    background-image: url(codes.jpg);
+    font-size: 30px;
+    background-size: contain;
+    
+}
+
+.btn {
+      
+    margin-inline: 5px;    
+    border-radius: 20px;
+}
+
+
+#text-box{
+    background-color: rgb(228, 232, 239);
+
+}

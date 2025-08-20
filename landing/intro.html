@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Todo App - Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link href="intro.style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            
+            <h1 class="text-center">Welcome to My Todo App</h1>
+            <section style="background: url(codes.jpg) no-repeat center center fixed; height: auto; background-size: cover;">
+                <div class="container-fluid">
+                    <div class="row d-flex text-center p-4 m-2">
+                        <div class="col-md-3">
+                            <a href="https://github.com/login">
+                                <button class="btn" id="btn1" >
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>                    
+                                </button>
+                            </a>     
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin">
+                                <button class="btn" id="btn2">
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="https://www.youtube.com">
+                                <button class="btn" id="btn3">
+                                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                </button>
+                            </a>                            
+                        </div>
+                        <div class="col-md-3">                
+                            <a href="info.html" class="text-decoration-none text-dark">
+                                <i class="fa-solid fa-user"></i>
+                            </a> 
+                        </div>
+                    </div>                      
+                </div>              
+                
+                <div class="row p-2" style="background: rgba(0, 0, 0, 0.5); color: #fff; border-radius: 20px;">
+                    <div class="col" style="width: 450px;">
+                        <h4 class="m-3">Handle all of your todo list items in this neat and tidy application.</h4>
+
+                        <div class="m-3 datetime-container">
+                            Todays Date: <span id="today-date"></span>
+                            <br>
+                            Current Time: <span id="current-time"></span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col" >                        
+                        <a class="btn btn-info mx-3" href="/frontend/app.html">To Main Page
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <img src="/frontend/images/todo-blue-circular-background.png" alt="todo-logo" class="img-fluid border">
+                        </a>
+                    </div>
+                </div>
+            </section>           
+        </header>          
+
+        <!-- main content -->
+        <div class="container-fluid" style="background-color: lightcyan;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>A quick glance at our Todo App</h4>
+                    <p>This application helps you manage your tasks efficiently.</p>
+                    <p>Stay organized and boost your productivity with our user-friendly interface.</p>
+                    <img src="/frontend/images/todoList-pix.png" alt="todoList picture" class="img-fluid" style="width: 400px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Click the buttons above to connect with me on GitHub, LinkedIn, or YouTube.</p>
+                </div>
+            </div>
+        </div>   
+
+        <!-- footer -->
+        <footer class="p-2" style="background-image: url(codes.jpg); height: 40px;">
+             <section class="footing">
+                <div class="text-center text-light">Kimsa Landuyt - <span id="copyright-year"></span> ©</div>
+            </section>            
+        </footer>
+
+        <!-- dynamic javascript -->
+        <script>
+            // set the date
+            const date = new Date();
+
+            const todaysDate = document.getElementById("today-date");
+            todaysDate.innerHTML = date.toLocaleDateString();
+
+            // set copyright year
+            document.getElementById("copyright-year").innerHTML = date.getFullYear();
+
+            // set the time every 1 seconds
+            const currentTime = document.getElementById("current-time");
+            currentTime.innerHTML = date.toLocaleTimeString();
+            setInterval(() => {
+                const date = new Date();
+                currentTime.innerHTML = date.toLocaleTimeString();
+            }, 1000);
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
