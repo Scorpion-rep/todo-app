@@ -1,13 +1,19 @@
 // alert("Welcome to the Todo App!");
 
 const dateElement = document.getElementById("date");
+//const currentTime = document.getElementById("current-time");
 
+// Set the URL for the API endpoint
+// This URL should match the backend server's endpoint for fetching todos
 const URL = 'http://localhost:3000/todos';
 
 // Format the date to a more readable format
-const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long', hour: '2-digit', minute: '2-digit'};
-const todayDate = new Date().toLocaleDateString('en-AU', options);
-dateElement.innerHTML = todayDate;
+setInterval(() => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long', hour: '2-digit', minute: '2-digit', second: '2-digit'};
+    const todayDate = new Date().toLocaleDateString('en-AU', options);   
+    dateElement.innerHTML = todayDate;
+    // console.log(todayDate);
+}, 1000);
 
 //============================================================
 

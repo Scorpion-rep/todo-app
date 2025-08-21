@@ -51,8 +51,8 @@ header, body {
     width: auto;
 }
 
-.web-page, .quiz-page {
-    background-image: url(codes.jpg);
+.web-page, .quiz-page, .gameDeal-page {
+    background-image: url(/frontend/images/codes.jpg);
     justify-content: space-around;
     background-size: cover;
     border:10px solid rgb(8, 53, 95);
@@ -63,13 +63,7 @@ header, body {
     width: auto;
 }
 
-.footing {
-    color: blanchedalmond;
-    background-image: url(codes.jpg);
-    font-size: 30px;
-    background-size: contain;
-    
-}
+
 
 .btn {
       
