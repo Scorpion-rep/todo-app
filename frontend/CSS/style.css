@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    color: rgb(114, 10, 194);    
 }
 
 body {
@@ -14,14 +15,14 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: blue;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
-.navbar a:hover {
-    color: rgb(99, 37, 199);
-    text-decoration: underline;
+.navbar a:hover, .navbar p:hover {
+    color: salmon;
+    text-decoration: none;
 }
 
 .container {

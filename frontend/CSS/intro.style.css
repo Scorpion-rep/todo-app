@@ -3,20 +3,32 @@ body{
     text-align: center;
 }
 
+.navbar {
+    background: linear-gradient(to right, rgb(205, 249, 175), rgb(245, 191, 172));
+    box-shadow: 0px 2px 10px;
+}
+
+.navbar a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
 a:hover{
     color: chartreuse;    
 }
 
 i{
-    font-size: 50px; 
+    font-size: 45px; 
     color:rgb(221, 22, 22);
+    padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 45px;
     color: rgb(33, 105, 129);
    
 }
@@ -27,12 +39,12 @@ h3{
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(33, 105, 129);
 }
 
 .container{
-    
+    max-height: auto;
     justify-content: space-around;
 }
 
@@ -41,8 +53,7 @@ header, body {
 }
 
 .my-page{    
-    justify-content: space-around;
-    background-size: cover;
+    
     border:10px solid rgb(8, 53, 95);
     border-width: 5px;
     border-radius: 40px;

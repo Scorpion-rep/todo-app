@@ -13,20 +13,33 @@
 </head>
 <body>       
 
-    <div class="container mt-4 p-5 bg-light rounded shadow">
-        <nav  class="navbar border">
-            <div class="container-fluid d-flex justify-content-between">                
-                <a class="navbar-brand" href="intro.html">                    
-                    <img src="images/todo-blue-circular-background.png" alt="Todo Logo" class="img-fluid" style="width: 45px;">
-                </a>
-                <h1 class="text-center">Welcome to My Todo App</h1>
-                <span class="navbar-text">
-                    <a href="info.html" class="text-decoration-none text-dark">
-                        <i class="fa-solid fa-user"></i>
-                    </a>
-                </span>
+    <div class="container-fluid mt-4 p-5 bg-light rounded shadow " style="max-width: 150vh;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">            
+            <a class="navbar-brand" href="#">                
+                <img src="images/todo-blue-circular-background.png" alt="Todo Logo" class="img-fluid" style="width: 50px;">                
+            </a>
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto me-0 text-primary">
+                    <li class="nav-item">
+                        <a class="nav-link" href="intro.html">
+                            <i class="fa-solid fa-circle-info fa-2x text-primary"></i>
+                            <p class="d-inline align-middle text-primary">App info</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">
+                            <i class="fa-solid fa-circle-user fa-2x text-primary"></i>
+                            <p class="d-inline align-middle text-primary">Contact</p>
+                        </a>
+                    </li>               
+                </ul>               
             </div>
-        </nav>
+        </nav>    
 
         <h3 class="text-center mt-3">
             <span id="date" class="fw-bold">Today</span>            

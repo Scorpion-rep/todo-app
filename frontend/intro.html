@@ -13,8 +13,33 @@
     <body>
         <!-- header -->
         <header>
-            
-            <h1 class="text-center">Welcome to My Todo App</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/todo-blue-circular-background.png" alt="Todo Logo" class="img-fluid" style="width: 50px;">                    
+                </a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto me-0 text-primary">
+                        <li class="nav-item">
+                            <a class="nav-link" href="intro.html">
+                                <i class="fa-solid fa-circle-info fa-2x text-primary"></i>
+                                <p class="d-inline align-middle text-primary">App info</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">
+                                <i class="fa-solid fa-circle-user fa-2x text-primary"></i>
+                                <p class="d-inline align-middle text-primary">Contact</p>
+                            </a>
+                        </li>               
+                    </ul>               
+                </div>
+            </nav>    
+            <h1 class="text-center p-3">Welcome to Todo App</h1>
             <section style="background: url(images/codes.jpg) no-repeat center center fixed; height: auto; background-size: cover;">
                 <div class="container-fluid">
                     <div class="row d-flex text-center p-4 m-2">
@@ -33,16 +58,18 @@
                             </a>
                         </div>
                         <div class="col-md-3">
-                            <a href="https://www.youtube.com">
+                            <a href="https://www.youtube.com/">
                                 <button class="btn" id="btn3">
                                     <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                                 </button>
                             </a>                            
                         </div>
-                        <div class="col-md-3">                
-                            <a href="info.html" class="text-decoration-none text-dark">
-                                <i class="fa-solid fa-user"></i>
-                            </a> 
+                         <div class="col-md-3">
+                            <a href="https://twitter.com/i/flow/login">
+                                <button class="btn" id="btn4">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </button>
+                            </a>
                         </div>
                     </div>                      
                 </div>              
@@ -59,7 +86,7 @@
                     </div>
                 </div>
                 <div class="row p-2">
-                    <div class="col" >                        
+                    <div class="col pb-5" >                        
                         <a class="btn btn-info mx-3" href="index.html">To Main Page
                             <i class="fa-solid fa-arrow-right"></i>
                             <img src="/frontend/images/todo-blue-circular-background.png" alt="todo-logo" class="img-fluid border">
@@ -70,7 +97,7 @@
         </header>          
 
         <!-- main content -->
-        <div class="container-fluid" style="background-color: lightcyan;">
+        <div class="container-fluid p-3" style="background-color: lightcyan;">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h4>A quick glance at our Todo App</h4>
@@ -81,13 +108,13 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Click the buttons above to connect with me on GitHub, LinkedIn, or YouTube.</p>
+                    <p class=" fs-6 p-5">Click the buttons above to connect with me on GitHub, LinkedIn, or YouTube.</p>
                 </div>
             </div>
         </div>   
 
         <!-- footer -->
-        <footer class="p-2" style="background-image: url(images/codes.jpg); height: 40px;">
+        <footer class="p-3" style="background-image: url(images/codes.jpg); height: 40px;">
              <section class="footing">
                 <div class="text-center text-light">Kimsa Landuyt - <span id="copyright-year"></span> ©</div>
             </section>            

@@ -14,93 +14,112 @@
 <html>
     <body>         
         <header>
-            <nav class="navbar border">
-                <div class="container-fluid d-flex justify-content-between">                
-                    <a class="navbar-brand" href="/frontend/index.html">                    
-                        <img src="/frontend/images/todo-blue-circular-background.png" alt="Todo Logo" class="img-fluid" style="width: 45px;">
-                    </a>
-                    <h1 >Welcome to My Porfolio</h1>
-                    <span class="navbar-text">                        
-                        <a href="intro.html" class="text-decoration-none text-dark">
-                            <i class="fa-solid fa-info"></i>
-                        </a>
-                    </span>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">            
+                <a class="navbar-brand" href="index.html">                
+                    <img src="images/todo-blue-circular-background.png" alt="Todo Logo" class="img-fluid" style="width: 50px;">                
+                </a>
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto me-0 text-primary">
+                        <li class="nav-item">
+                            <a class="nav-link" href="intro.html">
+                                <p class="d-inline align-middle text-primary">App info</p>
+                                <i class="fa-solid fa-circle-info fa-2x text-primary"></i>                                
+                            </a>
+                        </li>                                      
+                    </ul>               
                 </div>
-            </nav>
-            
-            <section class="hero" style="background: url(images/codes.jpg) no-repeat center center fixed;">
+            </nav>  
+            <h1 class="text-center p-4">Thank you for using our Todo App!</h1>
+            <section style="background: url(images/codes.jpg) no-repeat center center fixed; height: auto; background-size: cover;">
                 <div class="container-fluid">
-                    <div class="row text-center">
-                        <div class="col-3">
+                    <div class="row d-flex text-center p-4 m-2">
+                        <div class="col-md-3">
                             <a href="https://github.com/login">
                                 <button class="btn" id="btn1" >
-                                    <i class="fa-brands fa-github" href="https://github.com/Scorpion-rep"> </i>                    
+                                    <i class="fa-brands fa-github" href="https://github.com/login"> </i>                    
                                 </button>
                             </a>     
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3">
                             <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin">
                                 <button class="btn" id="btn2">
-                                    <i style="font-size: 60px;" class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                                 </button>
                             </a>
                         </div>
-                        <div class="col-3">
-                            <a href="https://www.youtube.com">
+                        <div class="col-md-3">
+                            <a href="https://www.youtube.com/">
                                 <button class="btn" id="btn3">
-                                    <i style="font-size: 60px;" class="fa-brands fa-youtube" aria-hidden="true;"></i>
+                                    <i class="fa-brands fa-youtube" aria-hidden="true;"></i>
                                 </button>
                             </a>                            
                         </div>
-                        <div class="col-3">
-                            <a href="https://x.com/">
+                        <div class="col-md-3">
+                            <a href="https://twitter.com/i/flow/login">
                                 <button class="btn" id="btn4">
-                                    <i style="font-size: 60px;" class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
                                 </button>
                             </a>
                         </div>
-                    </div>      
-                </div>
-
-                <div class="container mt-5">
-                    <h2 class="text-center text-light fw-bold  mb-4" style="font-size: 90px;">Contact Us</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label text-light fs-2">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="row p-2 justify-content-center align-middle" style="background: rgba(0, 0, 0, 0.5); color: #fff; border-radius: 20px;">
+                        <div class="col-md-5">
+                            <h3 class="text-center text-light fw-bold  mb-4" style="font-size: 90px;">Contact Us</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label text-light fs-2">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label text-light fs-2">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label text-light fs-2">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Your message here" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary fs-2 m-5">Subscribe</button>
+                            </form>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label text-light fs-2">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <div class="col-md-5">
+                            <h4 class="m-3">Get in Touch</h4>
+                            <p class="m-3">Feel free to reach out for any inquiries or feedback.</p>
+                            <p class="m-3"><i class="fa-solid fa-phone"></i> Phone: +61 424 890 408</p>
+                            <p class="m-3"><i class="fa-solid fa-envelope"></i> Email: kim.landuyt@gmail.com</p>
+                            <p class="m-3"><i class="fa-solid fa-map-marker-alt"></i> Location: Perth, WA</p>
+                            <p class="m-3"><i class="fa-solid fa-globe"></i> Website: www.kimlanduyt.com</p>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label text-light fs-2">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message here" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary fs-2 m-5">Subscribe</button>
-                    </form>
-                </div>        
+                    </div>    
+                </div>                
             </section>        
         </header>
-        <div class="row my-page d-flex">              
-            <h6>Hobby_Something I have built</h6>                        
-            <div class="col-md-4 web-page">
-                <p>Password Generator</p>
-                <a href="https://scorpion-rep.github.io/password-generator/">Password Generator</a>
-            </div>     
-            <div class="col-md-4 quiz-page">
-                <p>Quiz Challenge</p>
-                <a href="https://scorpion-rep.github.io/Quiz-Challenge-With-Timer/">Quiz Challenge</a>
-            </div>
-            <div class="col-md-4 gameDeal-page">
-                <p>Game Deal Compare</p>
-                <a href="https://scorpion-rep.github.io/Game-Deal-Compare/">Game Deal Compare</a>
+        <div class="container-fluid p-4 bg-light rounded shadow" style="max-width: 170vh; margin-top: 25px; margin-bottom: 25px; background: linear-gradient(to right, rgb(205, 249, 175), rgb(245, 191, 172));">
+            <div class="row my-page d-flex justify-content-center align-middle">
+                <h6>Coding is my Hobby - Something I have built</h6>
+                <div class="col-md-4 web-page">
+                    <p>Password Generator</p>
+                    <a href="https://scorpion-rep.github.io/password-generator/">Password Generator</a>
+                </div>     
+                <div class="col-md-4 quiz-page">
+                    <p>Quiz Challenge</p>
+                    <a href="https://scorpion-rep.github.io/Quiz-Challenge-With-Timer/">Quiz Challenge</a>
+                </div>
+                <div class="col-md-4 gameDeal-page">
+                    <p>Game Deal Compare</p>
+                    <a href="https://scorpion-rep.github.io/Game-Deal-Compare/">Game Deal Compare</a>
+                </div>
             </div>
         </div>
-        <footer class="p-2" style="background-image: url(images/codes.jpg); height: 40px;">
+        <footer class="p-3" style="background-image: url(images/codes.jpg); height: 40px;">
              <section class="footing">
                 <div class="text-center text-light">Kimsa Landuyt - <span id="copyright-year"></span> ©</div>
             </section>            
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     </body>    
 </html>
