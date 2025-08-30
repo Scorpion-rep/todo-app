@@ -29,8 +29,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 45px;
-    color: rgb(33, 105, 129);
-   
+    color: rgb(33, 105, 129);   
 }
 
 h3{
@@ -74,14 +73,11 @@ header, body {
     width: auto;
 }
 
-
-
 .btn {
       
     margin-inline: 5px;    
     border-radius: 20px;
 }
-
 
 #text-box{
     background-color: rgb(228, 232, 239);
